@@ -47,7 +47,7 @@ int main()
 void fileHandle(char** filepath, FILE** objfile)
 {
 	std::cout << "Input .obj file path:" << std::endl;
-	gets(*filepath);
+	std::cin.getline(*filepath,500);
 
 	if (0 != (*objfile = fopen(*filepath, "r")))
 	{
